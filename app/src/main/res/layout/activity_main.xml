@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingVertical="20dp"
+    android:weightSum="10"
+    android:paddingHorizontal="10dp">
+
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="160sp"
+        android:background="@drawable/background4"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_weight="7"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        tools:ignore="InefficientWeight,TextSizeCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="7"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    tools:ignore="UselessParent">
+
+                    <Button
+                        android:id="@+id/bac"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/gradient_button"
+                        android:paddingHorizontal="10dp"
+                        android:text="AC"
+                        android:textColor="#ffa500"
+                        android:textSize="30sp"
+                        tools:ignore="ButtonStyle,HardcodedText,TextContrastCheck,VisualLintButtonSize">
+
+
+                    </Button>
+
+                    <Button
+                        android:id="@+id/bc"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/gradient_button"
+                        android:text="C"
+                        android:textColor="#ffa500"
+                        android:textSize="30sp"
+                        tools:ignore="ButtonStyle,HardcodedText,TextContrastCheck,VisualLintButtonSize">
+
+                    </Button>
+
+                    <Button
+                        android:id="@+id/bb1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/gradient_button"
+                        android:text="("
+                        android:textColor="#ffa500"
+                        android:textSize="30sp"
+                        tools:ignore="ButtonStyle,HardcodedText,TextContrastCheck,VisualLintButtonSize">
+
+                    </Button>
+
+                    <Button
+                        android:id="@+id/bb2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/gradient_button"
+                        android:text=")"
+                        android:textColor="#ffa500"
+                        android:textSize="30sp"
+                        tools:ignore="ButtonStyle,HardcodedText,VisualLintButtonSize">
+
+                    </Button>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingVertical="5dp"
+                    android:weightSum="5"
+                    tools:ignore="UselessParent">
+
+                    <Button
+                        android:id="@+id/bmod"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/gradient_button"
+                        android:text="%"
+                        android:textAllCaps="false"
+                        android:textColor="#ffa500"
+                        android:textSize="30sp"
+                        tools:ignore="ButtonStyle,HardcodedText,VisualLintButtonSize">
+
+                    </Button>
+
+                    <Button
+                        android:id="@+id/bneg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/gradient_button"
+                        android:text="+/-"
+                        android:textAllCaps="false"
+                        android:textColor="#ffa500"
+                        android:textSize="28sp"
+                        tools:ignore="ButtonStyle,HardcodedText,TextContrastCheck,VisualLintButtonSize">
+
+                    </Button>
+
+                    <Button
+                        android:id="@+id/bn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/gradient_button"
+                        android:text="n^"
+                        android:textAllCaps="false"
+                        android:textColor="#ffa500"
+                        android:textSize="30sp"
+                        tools:ignore="ButtonStyle,HardcodedText,TextContrastCheck,VisualLintButtonSize">
+
+                    </Button>
+
+                    <Button
+                        android:id="@+id/blog"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/gradient_button"
+                        android:text="log"
+                        android:textAllCaps="false"
+                        android:textColor="#ffa500"
+                        android:textSize="27sp"
+                        tools:ignore="ButtonStyle,HardcodedText,TextContrastCheck,VisualLintButtonSize">
+
+                    </Button>
+
+                    <Button
+                        android:id="@+id/bsqr"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/gradient_button"
+                        android:text="x²"
+                        android:textAllCaps="false"
+                        android:textColor="#ffa500"
+                        android:textSize="30sp"
+                        tools:ignore="ButtonStyle,HardcodedText,TextContrastCheck,VisualLintButtonSize">
+
+                    </Button>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingVertical="5dp"
+                    android:weightSum="5">
+
+
+                    <Button
+                        android:id="@+id/bexpo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.3"
+                        android:background="@drawable/gradient_button"
+                        android:text="^"
+                        android:textAllCaps="false"
+                        android:textColor="#ffa500"
+                        android:textSize="40sp"
+                        tools:ignore="ButtonStyle,HardcodedText,VisualLintButtonSize">
+
+                    </Button>
+
+                    <Button
+                        android:id="@+id/bsqrt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.3"
+                        android:background="@drawable/gradient_button"
+                        android:text="√"
+                        android:textAllCaps="false"
+                        android:textColor="#ffa500"
+                        android:textSize="30sp"
+                        tools:ignore="ButtonStyle,HardcodedText,TextContrastCheck,VisualLintButtonSize">
+
+                    </Button>
+
+                    <Button
+                        android:id="@+id/brecip"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.3"
+                        android:background="@drawable/gradient_button"
+                        android:text="1/x"
+                        android:textAllCaps="false"
+                        android:textColor="#ffa500"
+                        android:textSize="30sp"
+                        tools:ignore="ButtonStyle,HardcodedText,TextContrastCheck,VisualLintButtonSize">
+
+                    </Button>
+
+                    <Button
+                        android:id="@+id/bequal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.1"
+                        android:background="@drawable/background3"
+                        android:text="="
+                        android:textColor="@color/black"
+                        android:textSize="50sp"
+                        tools:ignore="ButtonStyle,HardcodedText,VisualLintButtonSize,VisualLintBounds">
+
+                    </Button>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingVertical="5dp"
+                    android:weightSum="4">
+
+                    <Button
+                        android:id="@+id/b7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/gradient_button"
+                        android:text="7"
+                        android:textColor="@color/white"
+                        android:textSize="40sp"
+                        tools:ignore="ButtonStyle,HardcodedText,VisualLintButtonSize">
+
+                    </Button>
+
+                    <Button
+                        android:id="@+id/b8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/gradient_button"
+                        android:text="8"
+                        android:textColor="@color/white"
+                        android:textSize="40sp"
+                        tools:ignore="ButtonStyle,HardcodedText,VisualLintButtonSize">
+
+                    </Button>
+
+                    <Button
+                        android:id="@+id/b9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/gradient_button"
+                        android:text="9"
+                        android:textColor="@color/white"
+                        android:textSize="40sp"
+                        tools:ignore="ButtonStyle,HardcodedText,VisualLintButtonSize">
+
+                    </Button>
+
+                    <Button
+                        android:id="@+id/bmul"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/background2"
+                        android:text="×"
+                        android:textColor="@color/black"
+                        android:textSize="50sp"
+                        tools:ignore="ButtonStyle,HardcodedText,VisualLintButtonSize">
+
+                    </Button>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingVertical="5dp"
+                    android:weightSum="4">
+
+                    <Button
+                        android:id="@+id/b4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/gradient_button"
+                        android:text="4"
+                        android:textColor="@color/white"
+                        android:textSize="40sp"
+                        tools:ignore="ButtonStyle,HardcodedText,VisualLintButtonSize">
+
+                    </Button>
+
+                    <Button
+                        android:id="@+id/b5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/gradient_button"
+                        android:text="5"
+                        android:textColor="@color/white"
+                        android:textSize="40sp"
+                        tools:ignore="ButtonStyle,HardcodedText,VisualLintButtonSize">
+
+                    </Button>
+
+                    <Button
+                        android:id="@+id/b6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/gradient_button"
+                        android:text="6"
+                        android:textColor="@color/white"
+                        android:textSize="40sp"
+                        tools:ignore="ButtonStyle,HardcodedText,VisualLintButtonSize">
+
+                    </Button>
+
+                    <Button
+                        android:id="@+id/bmin"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/background2"
+                        android:text="-"
+                        android:textColor="@color/black"
+                        android:textSize="50sp"
+                        tools:ignore="ButtonStyle,HardcodedText,VisualLintButtonSize">
+
+                    </Button>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingVertical="5dp"
+                    android:weightSum="4">
+
+                    <Button
+                        android:id="@+id/b1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/gradient_button"
+                        android:text="1"
+                        android:textColor="@color/white"
+                        android:textSize="40sp"
+                        tools:ignore="ButtonStyle,HardcodedText,VisualLintButtonSize">
+
+                    </Button>
+
+                    <Button
+                        android:id="@+id/b2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/gradient_button"
+                        android:text="2"
+                        android:textColor="@color/white"
+                        android:textSize="40sp"
+                        tools:ignore="ButtonStyle,HardcodedText,VisualLintButtonSize">
+
+                    </Button>
+
+                    <Button
+                        android:id="@+id/b3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/gradient_button"
+                        android:text="3"
+                        android:textColor="@color/white"
+                        android:textSize="40sp"
+                        tools:ignore="ButtonStyle,HardcodedText,VisualLintButtonSize">
+
+                    </Button>
+
+                    <Button
+                        android:id="@+id/bplus"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/background2"
+                        android:text="+"
+                        android:textColor="@color/black"
+                        android:textSize="50sp"
+                        tools:ignore="ButtonStyle,HardcodedText,VisualLintButtonSize">
+
+                    </Button>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingVertical="5dp"
+                    android:weightSum="4">
+
+                    <Button
+                        android:id="@+id/bhrt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/background3"
+                        android:text=".00"
+                        android:textColor="@color/black"
+                        android:textSize="40sp"
+                        tools:ignore="ButtonStyle,HardcodedText,VisualLintButtonSize">
+
+                    </Button>
+
+                    <Button
+                        android:id="@+id/b0"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/gradient_button"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="40sp"
+                        tools:ignore="ButtonStyle,HardcodedText,VisualLintButtonSize">
+
+                    </Button>
+
+                    <Button
+                        android:id="@+id/bdot"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/background3"
+                        android:text="."
+                        android:textColor="@color/black"
+                        android:textSize="50sp"
+                        tools:ignore="ButtonStyle,HardcodedText,VisualLintButtonSize">
+
+                    </Button>
+
+                    <Button
+                        android:id="@+id/bdiv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/background2"
+                        android:text="÷"
+                        android:textColor="@color/black"
+                        android:textSize="50sp"
+                        tools:ignore="ButtonStyle,HardcodedText,VisualLintButtonSize">
+
+                    </Button>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
